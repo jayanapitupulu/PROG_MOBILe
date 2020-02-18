@@ -1,7 +1,8 @@
 //app/routes/book.routes.js
 module.exports = app => {
     const books = require("../controllers/book.controller");
-    // cara mengakses gambar http://polibatam.ac.id/img/perpustakaan.png 
+    // cara mengakses gambar
+   http://polibatam.ac.id/img/perpustakaan.png
     // Mengambil semua data
     app.get("/api/books", books.findAll);
     // Mengambil data buku yang memiliki id = id
@@ -14,5 +15,4 @@ module.exports = app => {
     app.delete("/api/books/:id", books.delete);
     // Hapus seluruh data
     app.delete("/api/books", books.deleteAll);
-  };
-  
+   };
